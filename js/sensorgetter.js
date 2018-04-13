@@ -13,6 +13,7 @@ function devicemotionHandler(event){
 
 
       var html = "";
+      html += "加速度センサ :"+"<br>";
       html += "X回転 : " + x + "<br>";
       html += "Y回転 : " + y + "<br>";
       html += 'Z回転 : ' + z;
@@ -28,6 +29,7 @@ function deviceorientationHandler(event){
   var alpha = event.alpha;
 
   var html = "";
+  html += "ジャイロセンサ :"+"<br>";
   html += "BETA : " + beta + "<br>";
   html += "GAMMA : " + gamma + "<br>";
   html += 'ALPHA : ' + alpha;
