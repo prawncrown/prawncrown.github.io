@@ -1,3 +1,4 @@
+(function () {
 $(function () {
     window.addEventListener("devicemotion", devicemotionHandler);
     window.addEventListener("deviceorientation", deviceorientationHandler);
@@ -25,10 +26,11 @@ function deviceorientationHandler(event){
   var gamma = event.gamma;
   // ジャイロZ軸
   var alpha = event.alpha;
-  
+
   var html = "";
   html += "BETA : " + beta + "<br>";
   html += "GAMMA : " + gamma + "<br>";
   html += 'ALPHA : ' + alpha;
   $("#gyro").html(html);
 }
+})();
